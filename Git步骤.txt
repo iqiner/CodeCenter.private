@@ -1,0 +1,20 @@
+1 安装Git for Windows
+2 在GitHub注册自己的账号
+3 Config global account
+  git config --global user.name "sure.deng"
+  git config --global user.email "sure.j.deng@newegg.com"
+4 Generate SSH key
+  ssh-keygen -t rsa -C "sure.j.deng@newegg.com"
+5 Copy SSH Key
+  clip < ~/.ssh/id_rsa.pub
+6 Test connection
+  ssh -T git@github.com
+7 git clone "http://"
+8 git push origin master
+9 改变Remote Url：
+  git remote set-url origin "git@github.com:user/responsitory.git"
+  git remote -v
+ 
+ 
+ 
+  
