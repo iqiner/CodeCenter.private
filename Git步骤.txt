@@ -1,5 +1,5 @@
-1 °²×°Git for Windows
-2 ÔÚGitHub×¢²á×Ô¼ºµÄÕËºÅ
+1 å®‰è£…Git for Windows
+2 åœ¨GitHubæ³¨å†Œè‡ªå·±çš„è´¦å·
 3 Config global account
   git config --global user.name "sure.deng"
   git config --global user.email "sure.j.deng@newegg.com"
@@ -11,9 +11,14 @@
   ssh -T git@github.com
 7 git clone "http://"
 8 git push origin master
-9 ¸Ä±äRemote Url£º
+9 æ”¹å˜Remote Urlï¼š
   git remote set-url origin "git@github.com:user/responsitory.git"
   git remote -v
+10 å®šä¹‰Git æ¯”è¾ƒå·¥å…·
+  git config --global diff.tool bc3
+  git config --global difftool.bc3.path "C:\Program Files (x86)\Beyond Compare 3\BCompare.exe"
+  git config --global merge.tool bc3
+  git config --global mergetool.bc3.path "C:\Program Files (x86)\Beyond Compare 3\BCompare.exe"
  
  
  
