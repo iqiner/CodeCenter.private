@@ -19,7 +19,8 @@
   git config --global difftool.bc3.path "C:\Program Files (x86)\Beyond Compare 3\BCompare.exe"
   git config --global merge.tool bc3
   git config --global mergetool.bc3.path "C:\Program Files (x86)\Beyond Compare 3\BCompare.exe"
- 
+11 如何比较两次Commit之间的差异
+  git diff Commit1 Commit2 / git difftool commit1 commit2
  
  
   
