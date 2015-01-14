@@ -22,5 +22,7 @@
 11 如何比较两次Commit之间的差异
   git diff Commit1 Commit2 / git difftool commit1 commit2
 12 Git ignore如何配置
- 
+13 Git CRLF的坑。Windows风格还是Unix风格？
+   Git config --global core.autocrlf false
+   git config --global core.safecrlf true
   
