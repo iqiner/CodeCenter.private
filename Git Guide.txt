@@ -29,29 +29,28 @@ Git的版本库有分为三个区域：工作区，暂存取和版本库。
 7.	git add <filename>
 	git commit -m"<comment>"
 	git push origin master
-8.	如何比较两次Commit之间的差异
+8.	删除文件
+	git rm <filename>
+9.	重命名文件
+	git mv <filename1> <filename2>
+10.	如何比较两次Commit之间的差异
 	git diff commit1 commit2 、 git difftool commit1 commit2
-9.	如何比较当前和之前某一次Commit之间的差异
+11.	如何比较当前和之前某一次Commit之间的差异
 	git diff commit1、 git difftool commit1
-10.	如何比较回滚版本到某次Commit
+12.	如何比较回滚版本到某次Commit
 	git reset --hard commit \ git reset --hard HEAD^~
-11.	如何回滚Remote端到某次Commit
+13.	如何回滚Remote端到某次Commit
 	假设当前HEAD的CommitID为Commit1
 	git pull origin master
 	git reset --hard commit3
 	git push -f origin master
-12.	如果我现在右后悔了刚才的操作怎么办呢？
+14.	如果我现在右后悔了刚才的操作怎么办呢？
 	git reset --hard commit1
 	git push origin master
-13.	如何拉取分支
+15.	如何拉取分支
 	git checkout -b dev <=> git branch dev; git checkout dev
 	git push -u origin dev
-14.	如何删除分支
+16.	如何删除分支
 	git checkout master
 	git branch -d dev
 	git push origin --delete dev
-15	删除文件
-	git rm <filename>
-16	重命名文件
-	git mv <filename1> <filename2>
-	
