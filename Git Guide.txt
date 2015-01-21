@@ -33,7 +33,7 @@ Git的版本库有分为三个区域：工作区，暂存取和版本库。
 	git rm <filename>
 9.	重命名文件
 	git mv <filename1> <filename2>
-10.	如何比较两次Commit之间的差异,冲突
+10.	如何比较两次Commit之间的差异。
 	git diff commit1 commit2 、 git difftool commit1 commit2
 11.	如何比较当前和之前某一次Commit之间的差异
 	git diff commit1、 git difftool commit1
