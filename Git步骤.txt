@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Git的基本概念：
 Git是一个分布式的版本控制系统。和集中式的版本控制系统，不同之处在于，他不需要一个中央服务器来进行版本控制管理，因为它的版本库就在本地，每一台本地机器都是一个版本库。
 当然一般情况下，还是会有一个远端的版本库，主要是为了方便开发人员之间进行协作交换版本，即使没有这个东西，也不影响开发和版本控制，只是协作起来没那么方便而已。
@@ -50,3 +51,82 @@ Git的版本库有分为三个区域：工作区，暂存取和版本库。
 	git checkout master
 	git branch -d dev
 	git push origin --delete dev
+=======
+﻿<<<<<<< HEAD
+1 ��װGit for Windows
+2 ��GitHubע���Լ����˺�
+3 Config global account
+  git config --global user.name "sure.deng"
+  git config --global user.email "sure.j.deng@newegg.com"
+4 Generate SSH key
+  ssh-keygen -t rsa -C "sure.j.deng@newegg.com"
+5 Copy SSH Key
+  clip < ~/.ssh/id_rsa.pub
+6 Test connection
+  ssh -T git@github.com
+7 git clone "http://"
+8 git push origin master
+9 �ı�Remote Url��
+  git remote set-url origin "git@github.com:user/responsitory.git"
+  git remote -v
+  
+ 10. 
+ 
+ 
+ 
+  
+=======
+Git的基本概念：
+Git是一个分布式的版本控制系统。和集中式的版本控制系统，不同之处在于，他不需要一个中央服务器来进行版本控制管理，因为它的版本库就在本地，每一台本地机器都是一个版本库。
+当然一般情况下，还是会有一个远端的版本库，主要是为了方便开发人员之间进行协作交换版本，即使没有这个东西，也不影响开发和版本控制，只是协作起来没那么方便而已。
+
+Git的版本库有分为三个区域：工作区，暂存取和版本库。
+我们对一个文件进行一次修改之后，需要执行git add <filename>命令将文件加入到暂存区，然后执行git commit -m"<comment>"才能提交到版本库。
+可以多执行git add命令，将多次add的修改一次性的Commit到版本库。
+
+
+1.	首先下载并安装Git for Windows:http://msysgit.github.io/
+2.	工欲善其事，必先利其器，先做一些Global配置:
+	git config --global user.name "Sure.J.Deng"
+	git config --global user.email "Sure.J.Deng@Newegg.Com"
+	git config --global core.autocrlf false
+	git config --global core.safecrlf true
+	git config --global diff.tool bc3
+	git config --global merge.tool bc3
+	git config --global difftool.bc3.path "C:\Program Files (x86)\Beyond Compare 3\BCompare.exe"
+	git config --global mergetool.bc3.path "C:\Program Files (x86)\Beyond Compare 3\BCompare.exe"
+	git config --global mergetool.keepbackup false
+3.	如何生成SSH KEY?
+	ssh -keygen -t rsa -C "Sure.J.Deng@Newegg.Com"
+4.	Copy SSH KEY
+	clip < ~/.ssh/id_rsa.pub
+5.	将SSH KEY配置到Git@TrGit2上后，测试连接
+	ssh -T git@trgit2
+6.	Clone版本库
+	git clone "git@trgit2：sd45/{repository}.git"
+7.	git add <filename>
+	git commit -m"<comment>"
+	git push origin master
+8.	如何比较两次Commit之间的差异
+	git diff commit1 commit2 、 git difftool commit1 commit2
+9.	如何比较当前和之前某一次Commit之间的差异
+	git diff commit1、 git difftool commit1
+10.	如何比较回滚版本到某次Commit
+	git reset --hard commit \ git reset --hard HEAD^~
+11.	如何回滚Remote端到某次Commit
+	假设当前HEAD的CommitID为Commit1
+	git pull origin master
+	git reset --hard commit3
+	git push -f origin master
+12.	如果我现在右后悔了刚才的操作怎么办呢？
+	git reset --hard commit1
+	git push origin master
+13.	如何拉取分支
+	git checkout -b dev <=> git branch dev; git checkout dev
+	git push -u origin dev
+14.	如何删除分支
+	git checkout master
+	git branch -d dev
+	git push origin --delete dev
+>>>>>>> master
+>>>>>>> dev
